@@ -1,0 +1,24 @@
+//define Method overloading
+//If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+//By changing the data types
+
+import java.util.*;
+
+class Adder{
+ static double add(int a,double b){
+     return a+b;
+ }   
+ static double add(int a,double b, int c){
+     return a+b+c;
+ }
+}
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double m = sc.nextDouble();
+        int p = sc.nextInt();
+        System.out.println(Adder.add(n, m));
+        System.out.println(Adder.add(n,m, p));
+    }
+}
