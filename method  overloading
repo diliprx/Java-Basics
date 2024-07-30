@@ -1,3 +1,6 @@
+//define Method Overloading
+//If a class has multiple methods having same name but different in parameters, it is known as Method Overloading (source: Javapoint.com)
+
 import java.util.*;
 
 class Adder{
