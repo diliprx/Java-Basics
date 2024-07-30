@@ -1,0 +1,33 @@
+// Calculating the area of certain shapes like circle,rectangle and triangle using Method overloading 
+
+import java.util.*;
+
+class Shape{
+    static double area(int r){
+        return Math.PI*r*r;
+    }
+    static double area(double l,double w){
+        return l*w;
+    }
+    static double area(double l, double h,boolean isTriangle){
+        return 0.5*h*l;
+        // In this case the area of rectangle and triangle has the same no.of ararguments and same data type so, only the boolean is intrintroduced 
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        Shape s = new Shape();
+        Scanner  sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        int r = sc.nextInt();
+        System.out.print("Enter length: ");
+        double l = sc.nextDouble();
+        System.out.print("Enter width: ");
+        double w = sc.nextDouble();
+        System.out.println("Enter height: ");
+        double h = sc.nextDouble();
+        System.out.println("The Circle area: "+s.area(r));
+        System.out.println("The Rectangle area: "+s.area(l,w));
+        System.out.println("The Triangle area: "+s.area(l,h,true));
+    }
+}
