@@ -26,8 +26,10 @@ public class Main{
         double w = sc.nextDouble();
         System.out.println("Enter height: ");
         double h = sc.nextDouble();
+        System.out.println("Enter base: ");
+        double b = sc.nextDouble();
         System.out.println("The Circle area: "+s.area(r));
         System.out.println("The Rectangle area: "+s.area(l,w));
-        System.out.println("The Triangle area: "+s.area(l,h,true));
+        System.out.println("The Triangle area: "+s.area(b,h,true));
     }
 }
