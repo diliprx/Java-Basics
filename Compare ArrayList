@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+class collection0 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        ArrayList<Integer> a = new ArrayList<>();
+        for(int i=0;i<=n;i++){
+            int c=sc.nextInt();
+            a.add(c);
+        }
+        int m=sc.nextInt();
+        ArrayList<Integer> b = new ArrayList<>();
+        for(int i=0;i<=m;i++){
+            int d=sc.nextInt();
+            b.add(d);
+        }
+        if(a.equals(b)==true){
+            System.out.println("Array Equals");
+        }
+        else{
+            System.out.println("Array Not Equals");
+        }
+    }
+}
